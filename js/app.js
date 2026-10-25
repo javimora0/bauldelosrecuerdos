@@ -304,6 +304,56 @@ backToMemories.addEventListener("click", () => {
 });
 
 
+function createFinalHearts() {
+    const container = document.getElementById("finalHearts");
+
+    if (!container) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return;
+    }
+
+    container.innerHTML = "";
+
+    for (let i = 0; i < 28; i++) {
+        const heart = document.createElement("span");
+
+        heart.className = "final-heart-particle";
+        heart.textContent = Math.random() > 0.5 ? "♥" : "♡";
+
+        heart.style.setProperty(
+            "--heart-left",
+            `${Math.random() * 100}%`
+        );
+
+        heart.style.setProperty(
+            "--heart-size",
+            `${10 + Math.random() * 14}px`
+        );
+
+        heart.style.setProperty(
+            "--heart-duration",
+            `${5 + Math.random() * 4}s`
+        );
+
+        heart.style.setProperty(
+            "--heart-delay",
+            `${Math.random() * 1.5}s`
+        );
+
+        heart.style.setProperty(
+            "--heart-drift",
+            `${-60 + Math.random() * 120}px`
+        );
+
+        heart.addEventListener("animationend", () => {
+            heart.remove();
+        });
+
+        container.appendChild(heart);
+    }
+}
+
 function answerProposal() {
     const proposalActions = document.getElementById("proposalActions");
     const proposalResponse = document.getElementById("proposalResponse");
@@ -315,7 +365,7 @@ function answerProposal() {
 
     photoScreen.classList.remove("visible");
     photoScreen.setAttribute("aria-hidden", "true");
-
+    createFinalHearts();
     finalScreen.classList.add("visible");
     finalScreen.setAttribute("aria-hidden", "false");
 }

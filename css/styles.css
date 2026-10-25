@@ -1444,3 +1444,60 @@ h1 em {
         animation: none;
     }
 }
+
+/* ========================================
+   LLUVIA DE CORAZONES DORADOS
+======================================== */
+
+.final-hearts {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.final-content {
+    position: relative;
+    z-index: 2;
+}
+
+.final-heart-particle {
+    position: absolute;
+    top: -30px;
+    left: var(--heart-left);
+    color: var(--gold);
+    font-size: var(--heart-size);
+    opacity: 0;
+    animation: fallingHeart var(--heart-duration) ease-in forwards;
+    animation-delay: var(--heart-delay);
+    text-shadow: 0 0 12px rgba(199, 164, 106, 0.35);
+}
+
+@keyframes fallingHeart {
+    0% {
+        transform: translate3d(0, -10px, 0) rotate(0deg);
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 0.65;
+    }
+
+    100% {
+        transform: translate3d(var(--heart-drift), 110vh, 0)
+            rotate(220deg);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .final-heart-particle {
+        animation: none;
+        display: none;
+    }
+}
