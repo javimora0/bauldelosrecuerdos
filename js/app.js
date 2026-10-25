@@ -251,6 +251,12 @@ saveMemoryButton.addEventListener("click", () => {
     document.getElementById("memoryProgress").textContent =
         `${unlockedCount} de 10 recuerdos descubiertos`;
 
+    const progressFill = document.getElementById("memoryProgressFill");
+    const progressTrack = document.getElementById("memoryProgressTrack");
+
+    progressFill.style.width = `${unlockedCount * 10}%`;
+    progressTrack.setAttribute("aria-valuenow", String(unlockedCount));
+
     // Avanzar al siguiente recuerdo pendiente.
     if (savedIndex === nextMemoryIndex) {
         nextMemoryIndex++;
@@ -297,13 +303,21 @@ backToMemories.addEventListener("click", () => {
     }, 750);
 });
 
-function answerProposal() {
-    document.getElementById("proposalActions").hidden = true;
 
-    const response = document.getElementById("proposalResponse");
-    response.textContent =
-        "¡Sabía que volvería a elegirte! ❤️ Ahora nos toca seguir escribiendo nuestra historia.";
-    response.hidden = false;
+function answerProposal() {
+    const proposalActions = document.getElementById("proposalActions");
+    const proposalResponse = document.getElementById("proposalResponse");
+    const photoScreen = document.getElementById("photoScreen");
+    const finalScreen = document.getElementById("finalScreen");
+
+    proposalActions.hidden = true;
+    proposalResponse.hidden = true;
+
+    photoScreen.classList.remove("visible");
+    photoScreen.setAttribute("aria-hidden", "true");
+
+    finalScreen.classList.add("visible");
+    finalScreen.setAttribute("aria-hidden", "false");
 }
 
 document.getElementById("proposalYesButton").addEventListener(
