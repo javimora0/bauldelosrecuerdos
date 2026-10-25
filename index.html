@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#17120f">
+    <meta name="description" content="Hay algo que quiero contarte.">
+
+    <title>Para Carmen 🍂</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <main class="welcome-screen">
+
+        <div class="ambient-light"></div>
+
+        <div class="autumn-decoration autumn-decoration-one">✦</div>
+        <div class="autumn-decoration autumn-decoration-two">✧</div>
+        <div class="autumn-decoration autumn-decoration-three">✦</div>
+
+        <section class="welcome-card">
+
+            <p class="eyebrow">PARA TI, CARMEN</p>
+
+            <div class="card-divider">
+                <span></span>
+                <span class="divider-symbol">✦</span>
+                <span></span>
+            </div>
+
+            <h1>
+                Quiero contarte<br>
+                <em>algo...</em>
+            </h1>
+
+            <p class="welcome-message">
+                Pero antes, me gustaría que hiciéramos
+                un pequeño recorrido por el baúl
+                de nuestros recuerdos.
+            </p>
+
+            <div class="card-bottom">
+                <span>Con cariño, para nosotros</span>
+                <span class="little-heart">♥</span>
+            </div>
+
+            <button class="start-button" id="startButton" type="button">
+                Comenzar nuestro viaje
+                <span aria-hidden="true">→</span>
+            </button>
+
+        </section>
+
+        <p class="bottom-caption">
+            UNA PEQUEÑA HISTORIA · SOLO PARA NOSOTROS
+        </p>
+
+    </main>
+
+
+    <!-- SEGUNDA PANTALLA: ENTRADA AL BAÚL -->
+
+
+<main class="memory-screen" id="memoryScreen" aria-hidden="true">
+
+    <div class="memory-glow"></div>
+
+    <header class="memory-header">
+        <p class="eyebrow">NUESTRA HISTORIA</p>
+
+        <h2>
+            El baúl de<br>
+            <em>los recuerdos</em>
+        </h2>
+
+        <p class="memory-intro">
+            Diez pequeños momentos de nuestra historia.
+            ¿Los volvemos a vivir?
+        </p>
+        <p class="memory-progress" id="memoryProgress">
+            0 de 10 recuerdos descubiertos
+        </p>
+    </header>
+
+    <!-- LOS DIEZ RECUERDOS -->
+    <section class="memory-gallery" aria-label="Nuestros diez recuerdos">
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 1, bloqueado">
+            <span class="thumb-number">01</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 2, bloqueado">
+            <span class="thumb-number">02</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 3, bloqueado">
+            <span class="thumb-number">03</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 4, bloqueado">
+            <span class="thumb-number">04</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 5, bloqueado">
+            <span class="thumb-number">05</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 6, bloqueado">
+            <span class="thumb-number">06</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 7, bloqueado">
+            <span class="thumb-number">07</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 8, bloqueado">
+            <span class="thumb-number">08</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 9, bloqueado">
+            <span class="thumb-number">09</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+        <button class="memory-thumb locked" type="button" aria-label="Recuerdo 10, bloqueado">
+            <span class="thumb-number">10</span>
+            <span class="thumb-lock">🔒</span>
+        </button>
+
+    </section>
+
+    <!-- INVITACIÓN A DESBLOQUEAR -->
+    <button class="first-memory-button" id="firstMemoryButton" type="button">
+
+        <span class="first-memory-icon">✧</span>
+
+        <span class="first-memory-title">
+            Toca para desbloquear
+        </span>
+
+        <span class="first-memory-subtitle" id="nextMemorySubtitle">
+            Nuestro primer recuerdo
+        </span>
+        <span class="first-memory-arrow">↓</span>
+
+    </button>
+
+    <p class="memory-caption">
+        DIEZ RECUERDOS · UNA HISTORIA
+    </p>
+
+</main>
+
+
+<!-- TERCERA PANTALLA: PRIMER RECUERDO -->
+
+<section class="photo-screen" id="photoScreen" aria-hidden="true">
+
+    <button class="back-button" id="backToMemories" type="button">
+        <span aria-hidden="true">←</span>
+        Volver al baúl
+    </button>
+
+    <div class="photo-heading">
+        <p class="eyebrow" id="memoryNumber">RECUERDO 01 DE 10</p>
+        <h2 id="memoryTitle">Todo empieza<br><em>por algún lugar.</em></h2>
+    </div>
+
+    <button
+        class="photo-flip-button"
+        id="photoFlipButton"
+        type="button"
+        aria-label="Dar la vuelta a la fotografía para descubrir el recuerdo"
+        aria-pressed="false"
+    >
+        <span class="photo-flipper">
+
+            <!-- ANVERSO -->
+            <span class="photo-face photo-front">
+                <span class="polaroid-photo">
+                <img id="memoryPhoto"
+                    src="assets/fotos/recuerdo-01.JPEG"
+                    alt="Fotografía de nuestro primer recuerdo">
+                </span>
+                <span class="polaroid-caption" id="memoryCaption">Un momento nuestro ♥</span>
+            </span>
+
+            <!-- REVERSO -->
+            <span class="photo-face photo-back">
+
+                <span class="back-decoration">✦</span>
+                <span class="back-label" id="memoryBackLabel">UN PEQUEÑO RECUERDO</span>
+                <span class="back-message" id="memoryBackMessage">
+                    Hay momentos que parecen pequeños
+                    cuando los vivimos, pero que con
+                    el tiempo se convierten en algo
+                    que queremos guardar para siempre.
+                </span>
+
+                <span class="back-heart">♥</span>
+
+            </span>
+
+        </span>
+    </button>
+
+
+    <div class="proposal-actions" id="proposalActions" hidden>
+        <p class="proposal-intro">Y esta vez puedes contestar...</p>
+
+        <button class="proposal-answer" id="proposalYesButton" type="button">
+            Sí, claro ❤️
+        </button>
+
+        <button class="proposal-answer proposal-answer-secondary"
+            id="proposalAbsolutelyButton" type="button">
+            ¡Pues claro que sí! 💕
+        </button>
+    </div>
+
+    <p class="proposal-response" id="proposalResponse" hidden></p>
+
+
+    <p class="flip-hint" id="flipHint">
+        Toca la fotografía para descubrir su otra cara
+    </p>
+
+    <button class="save-memory-button" id="saveMemoryButton" type="button" disabled>
+        Guardar recuerdo
+        <span aria-hidden="true">♡</span>
+    </button>
+
+</section>
+
+
+<audio id="backgroundMusic" loop preload="none">
+    <source src="assets/musica/melodia.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    class="music-toggle"
+    id="musicToggle"
+    type="button"
+    aria-label="Reproducir música"
+    aria-pressed="false">
+    <span id="musicIcon" aria-hidden="true">♫</span>
+    <span id="musicLabel">Activar música</span>
+</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
