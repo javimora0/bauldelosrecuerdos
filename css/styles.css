@@ -1252,3 +1252,52 @@ h1 em {
         padding: 10px 12px;
     }
 }
+
+
+/* Ambiente otoñal: hojas y pequeñas partículas */
+
+.autumn-particles {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.autumn-particle {
+    position: absolute;
+    top: -30px;
+    left: var(--left);
+    color: var(--gold);
+    opacity: 0;
+    font-size: var(--size);
+    animation: autumnFall var(--duration) linear var(--delay) infinite;
+    will-change: transform, opacity;
+}
+
+@keyframes autumnFall {
+    0% {
+        transform: translate3d(0, -20px, 0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: var(--opacity);
+    }
+
+    85% {
+        opacity: var(--opacity);
+    }
+
+    100% {
+        transform: translate3d(var(--drift), 110vh, 0) rotate(300deg);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .autumn-particle {
+        display: none;
+        animation: none;
+    }
+}

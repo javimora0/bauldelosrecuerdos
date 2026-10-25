@@ -348,3 +348,30 @@ musicToggle.addEventListener("click", async () => {
         musicLabel.textContent = "Activar música";
     }
 });
+
+
+const autumnParticles = document.getElementById("autumnParticles");
+
+if (
+    autumnParticles &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+) {
+    const symbols = ["✦", "✧", "·", "🍂"];
+    const particleCount = window.innerWidth < 600 ? 12 : 20;
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement("span");
+        particle.className = "autumn-particle";
+        particle.textContent = symbols[i % symbols.length];
+
+        particle.style.setProperty("--left", `${Math.random() * 100}%`);
+        particle.style.setProperty("--size", `${8 + Math.random() * 10}px`);
+        particle.style.setProperty("--duration", `${12 + Math.random() * 14}s`);
+        particle.style.setProperty("--delay", `${-Math.random() * 24}s`);
+        particle.style.setProperty("--drift", `${-35 + Math.random() * 70}px`);
+        particle.style.setProperty("--opacity", `${0.25 + Math.random() * 0.35}`);
+
+        autumnParticles.appendChild(particle);
+    }
+}
+
