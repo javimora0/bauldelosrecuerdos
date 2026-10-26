@@ -4,91 +4,91 @@ const memories = [
         number: 1,
         photo: "assets/fotos/recuerdo-01.JPEG",
         titleLine1: "Todo empieza",
-        titleLine2: "por algún lugar.",
-        caption: "Un momento nuestro ♥",
-        backLabel: "UN PEQUEÑO RECUERDO",
-        message: "Hay momentos que parecen pequeños cuando los vivimos, pero que con el tiempo se convierten en algo que queremos guardar para siempre."
+        titleLine2: "en algún momento.",
+        caption: "20/08/26 - El principio ♥",
+        backLabel: "El principio",
+        message: "Esa noche parece que todo se alineó para que tu y yo nos cruzasemos y nuestra vida cambiara para siempre."
     },
     {
         number: 2,
         photo: "assets/fotos/recuerdo-02.JPEG",
         titleLine1: "Sin darme cuenta",
-        titleLine2: "te acercaste.",
-        caption: "Poco a poco ♥",
+        titleLine2: "...",
+        caption: "11/09/26 - Benditas flores... ♥",
         backLabel: "Y ENTONCES...",
-        message: "A veces las personas llegan sin avisar y, poco a poco, empiezan a ocupar un lugar que ni siquiera sabíamos que estaba esperándolas."
+        message: "Sin darme cuenta, para ese entonces ya estaba perdidamente enamorado de ti."
     },
     {
         number: 3,
         photo: "assets/fotos/recuerdo-03.JPEG",
-        titleLine1: "Las pequeñas cosas",
-        titleLine2: "también cuentan.",
-        caption: "De esos momentos ♥",
+        titleLine1: "Nuestra primera",
+        titleLine2: "siesta...",
+        caption: "14/09/26 - Mi cumpleaños ♥",
         backLabel: "ESAS PEQUEÑAS COSAS",
-        message: "Una conversación más, una sonrisa inesperada, una tontería que nos hace reír... Al final, son esas cosas las que hacen que todo sea especial."
+        message: "Un libro, una pulsera y una frase que me casi me hace llorar 🥺. `Quiero mirarte a los ojos y darme cuenta de la vida`. "
     },
     {
         number: 4,
         photo: "assets/fotos/recuerdo-04.JPEG",
-        titleLine1: "Contigo",
-        titleLine2: "todo es distinto.",
-        caption: "A tu lado ♥",
-        backLabel: "UNA SENSACIÓN DIFERENTE",
-        message: "No sé cómo explicarlo del todo, pero hay algo en estar contigo que hace que incluso los momentos más normales tengan algo especial."
+        titleLine1: "El NESTEA de",
+        titleLine2: "maracuya....",
+        caption: "15/09/26 - Nuestro primer atardecer ♥",
+        backLabel: "ESAS PEQUEÑAS COSAS",
+        message: "Con una manta, snacks de lentejas y contigo, una tarde increíble, aquí ya no había vuelta atras, estaba enamorado de ti."
     },
     {
         number: 5,
         photo: "assets/fotos/recuerdo-05.JPEG",
-        titleLine1: "Mi lugar favorito",
-        titleLine2: "no es un lugar.",
-        caption: "Donde estés tú ♥",
-        backLabel: "UNA PEQUEÑA CONFESIÓN",
-        message: "Con el tiempo he ido entendiendo que no siempre importa dónde estás, sino con quién compartes ese momento."
+        titleLine1: "Conoces a mis",
+        titleLine2: "amigos...",
+        caption: "19/09/26 - Nuestro primer te quiero ♥",
+        backLabel: "ESAS PEQUEÑAS COSAS",
+        message: "Lo diré hasta el resto de mis días, si me piden que describa la felicidad sin duda diría lo que ese día sentí cuando escuche de tu boca decir que me querias. Gracias."
     },
     {
         number: 6,
         photo: "assets/fotos/recuerdo-06.JPEG",
-        titleLine1: "Quiero más",
-        titleLine2: "momentos así.",
-        caption: "Y los que quedan ♥",
-        backLabel: "ESTO NO HA HECHO MÁS QUE EMPEZAR",
-        message: "Quiero seguir sumando recuerdos contigo, de los grandes y de los pequeños, de los planeados y de los que surgen sin esperarlos."
+        titleLine1: "Pequeños momentos",
+        titleLine2: "...",
+        caption: "24/09/26 - Primera fajita juntos... ♥",
+        backLabel: "UNA PEQUEÑA CONFESIÓN",
+        message: "No siempre hay que hacer grandes cosas para ser felices, en este momento, contigo, preparando la cena yo me sentía en el autentico paraiso a tu lado..."
     },
     {
         number: 7,
         photo: "assets/fotos/recuerdo-07.JPEG",
-        titleLine1: "Lo bonito",
-        titleLine2: "es compartirlo.",
-        caption: "Tú y yo ♥",
-        backLabel: "LO QUE DE VERDAD IMPORTA",
-        message: "Porque las experiencias son bonitas, pero compartirlas contigo hace que me apetezca recordarlas una y otra vez."
+        titleLine1: "Miami Gastro",
+        titleLine2: "...",
+        caption: "03/10/26 - Confesiones...",
+        backLabel: "03/10/26 - Confesiones...",
+        message: "Recuerdo que esta noche tuvo tres fases: La primera la alegría de vernos y cenar juntos, la segundo al llegar a casa que mejor no digo lo bien que lo pasamos y la tercera al abrirnos el uno con el otro, nos conocimos un poco mas..."
     },
     {
         number: 8,
         photo: "assets/fotos/recuerdo-08.JPEG",
-        titleLine1: "Si pudiera elegir",
-        titleLine2: "otra vez...",
-        caption: "Volvería a elegirte ♥",
+        titleLine1: "El parque y",
+        titleLine2: "el banco",
+        caption: "07/10/26 - Como adolescentes... ♥",
         backLabel: "Y SI VOLVIERA AL PRINCIPIO...",
-        message: "Volvería a querer conocerte, volvería a buscar esos momentos contigo y volvería a descubrir todo lo que me haces sentir."
+        message: "Tus padres vuelven a casa y nosotros a los 15, morreandonos en un parque, para mi es suficiente con tal de verte aun que sea 5 minutos, 5 minutos que me alegran el resto de la semana..."
     },
     {
         number: 9,
         photo: "assets/fotos/recuerdo-09.JPEG",
-        titleLine1: "Todavía nos queda",
-        titleLine2: "mucho por vivir.",
-        caption: "Nuestra historia continúa ♥",
+        titleLine1: "Mérida",
+        titleLine2: "y mucho morro",
+        caption: "10/10/26 - Nuestro primer viaje...",
         backLabel: "ANTES DE LLEGAR AL FINAL",
-        message: "Y aunque ya tenemos recuerdos que me encanta guardar, lo que más ilusión me hace es pensar en todos los que todavía nos quedan por crear."
+        message: "Un viaje corto pero suficiente para darme cuenta que quiero recorrer cada rincon del mundo de tu mano."
     },
     {
         number: 10,
-        photo: "assets/fotos/recuerdo-10.JPEG",
+        photo: "assets/fotos/recuerdo-10.png",
         titleLine1: "Y ahora...",
         titleLine2: "quiero preguntarte algo.",
-        caption: "El recuerdo más especial ♥",
+        caption: "Y no tienes ni idea de lo que es... ♥",
         backLabel: "TENGO UNA PREGUNTA PARA TI...",
-        message: "Carmen, volvería a elegirte una y mil veces. Me encanta nuestra historia, pero me hace todavía más ilusión todo lo que nos queda por vivir. Así que hoy quiero volver a preguntártelo, como te mereces: ¿quieres ser mi novia? ❤️"    }
+        message: "Carmen, volvería a elegirte una y mil veces. Me encanta nuestra historia, pero me hace todavía más ilusión todo lo que nos queda por vivir. Así que hoy quiero preguntartelo oficialmente: ¿quieres ser mi novia? ❤️"    }
 ];
 
 
